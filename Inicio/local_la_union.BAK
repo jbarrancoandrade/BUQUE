@@ -1,0 +1,64 @@
+SET OLEOBJECT ON
+_SCREEN.CAPTION 	= "Caption no definido"
+_SCREEN.ICON    	= ""
+_SCREEN.WINDOWSTATE = 2
+SET TALK 	 OFF
+SET UNIQUE 	 OFF
+SET CONFIRM  OFF
+SET SAFETY   OFF
+SET ECHO 	 OFF
+SET BELL 	 OFF
+SET DELETE 	 ON
+SET CENTURY  ON
+SET NEAR 	 ON
+SET STRICTDATE  TO 0
+SET REPROCESS TO 1 SECONDS
+SET MULTILOCKS  ON
+SET STATUS BAR  OFF
+SET ESCAPE  	OFF
+SET CONSOLE 	OFF
+SET SYSMENU 	OFF
+SET ENGINEBEHAVIOR 70
+SET DATE DMY
+SET HOURS TO 24
+
+SET DEFAULT TO E:\QualityPos
+
+SET PATH TO Quality_PER\Pry_Comercial\LA_UNION\Fuentes,;
+			Quality_PER\Pry_Comercial\LA_UNION\Reportes,;
+			Quality_PER\Pry_Comercial\LA_UNION\Graficos,;
+			Quality_PER\Pry_Comercial\LA_UNION\Inicio,;
+			Generales,;
+			Clases,;
+			Graficos,;
+			Iconos,;
+			PRGS,;
+			QualityExe\Fuentes
+
+SET PROCEDURE TO RutinasQuality, Codbar, Dummy
+
+CLEAR  DLLS
+
+PUBLIC cServer,cBase,cUserG,cPasswG
+PUBLIC ColorResalteTextBox, HeaderBackColor, HeaderForeColor, ColorLabelKeys, ProductName 
+
+PUBLIC Empresa,NitEmpresa
+PUBLIC CodUsuario
+
+PUBLIC ARRAY aVector(50)	
+
+ColorResalteTextBox = RGB(193,255,255)
+HeaderBackColor	= 8421504
+HeaderForeColor = RGB(255,255,255)
+ColorLabelKeys  = RGB(0,0,255)
+ProductName		= "QualityPOS"
+
+cServer 	= "MasterPC"
+cBase		= "BD_SEGURIDAD_ZALMA"
+cUserG		= "sa"
+cPasswG		= "admin"
+
+CodUsuario  = "ARONCO"
+
+Empresa 	= "MarKeting & Laboratorio de Computadores"
+Nitempresa 	= '70829084-2'
